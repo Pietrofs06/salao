@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+    <header>
+        <div class-="container">
+            <br>
+            <br>
+            <hr>
+            <nav>
+                <section class="hero">
+                    <ul>
+                        <a href="../index.html">Início</a>
+                        <a href="services.html">Serviços</a>
+                        <a href="produtos.html">Produtos</a>
+                        <a href="orcamentos.html">Orçamento</a>
+                        <a href="about.html">Sobre Nós</a>
+                        <a href="contact.html">Contato</a>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <p>
+        <h1>Orçamento</h1>
+        </p>
+        <section class="hero">
+            <div class="hero-content">
+                <br>
+                <form id="submit" method="post">
+                    <p>
+                        <label for="usuario">Nome Completo:</label><br>
+                        <input type="text" id="usuario" name="usuario" placeholder="Digite seu nome" required>
+                    </p>
+
+                    <p>
+                        <label for="e-mail">E-Mail:</label><br>
+                        <input type="email" id="e-mail" name="e-mail" placeholder="Digite seu e-mail" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Número:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="Digite seu número" minlength="10"
+                            maxlength="11" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
+                    </p>
+
+                    <p>
+                        <label for="servico">Selecione um serviço:</label>
+                        <select id="servico" name="servico">
+                            <option value="Corte de Cabelo">Corte de Cabelo</option>
+                            <option value="Hidratação Capilar">Hidratação Capilar</option>
+                            <option value="Design de Barba">Design de Barba</option>
+                            <option value="Design de Sombrancelhas">Design de Sombrancelhas</option>
+                            <option value="Relaxamento e Alisamento Capilar">Relaxamento e Alisamento Capilar</option>
+                            <option value="Coloração Capilar">Coloração Capilar</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="pagamento">Selecione a forma de pagamento:</label>
+                        <select id="pagamento" name="pagamento">
+                            <option value="Dinheiro">Dinheiro</option>
+                            <option value="Cartão">Cartão</option>
+                            <option value="Pix">Pix</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="datehour">Data e hora do corte:</label>
+                        <input type="datetime-local" id="hora" name="hora" required>
+                    </p>
+
+                    <p>
+                        <label for="comentario"><big>Descrição do serviço (Opcional):</big></label><br>
+                        <textarea id="comentario" name="comentario" rows="5" cols="30"></textarea>
+                    </p>
+
+                    <p>
+                        <label for="e-mail_Orcamento">E-Mail de Orçamento:</label><br>
+                        <input type="email" id="e-mail_Orcamento" name="e-mail_Orcamento"
+                            placeholder="Digite seu e-mail de orçamento">
+                        <br>
+                        <label for="aviso"><small>Insira o E-Mail que você deseja receber o orçamento</small></label>
+                    </p>
+
+                    <p>
+                        <label for="receber-noticias">Receber Lembrete</label>
+                        <input type="checkbox" id="receber-noticias" name="receber-noticias" checked>
+                    </p>
+
+                    <button type="reset" class="btn btn-primary btn-play" value="Limpar Login">Limpar</button>
+                    <button type="submit" id="submitButton" class="btn btn-primary btn-play">Enviar</button></p>
+
+            </div>
+        </section>
+        <h1>Nossa Localização</h1>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3755.0347151965534!2d-47.94044552386068!3d-19.753679632844076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad036dc90da0b%3A0x7d51e2721bc7f52e!2sCentro%20de%20Forma%C3%A7%C3%A3o%20Profissional%20Fidelis%20Reis%20-%20SENAI%20Uberaba!5e0!3m2!1spt-BR!2sbr!4v1730160994964!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Felipe e Pietro. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./static/js/form_handler.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
